@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fira+Sans:wght@600&display=swap');
+
+
+body {
+    font-family: 'Merriweather', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+#logo {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.5em;
+    margin-left: 20px;
+}
+
+h2 {
+    font-family: 'Fira Sans', sans-serif;
+    color: #d10f0f;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Merriweather';
+}
+
+.producto-container {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+.imagen-producto img {
+    width: 350px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.info-producto {
+    text-align: left;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-family: 'Fira sans', sans-serif;
+    margin-bottom: 10px;
+}
+
+.precio {
+    font-size: 1.8em;
+    color: #d10f0f;
+    margin-bottom: 20px;
+    font-family: 'Fira sans';
+}
+
+select, input {
+    font-size: 1.1em;
+    padding: 8px;
+    margin-top: 8px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+select:hover, input:hover {
+    border-color: #d10f0f;
+}
+
+.boton-compra {
+    background-color: #d10f0f;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-top: 25px; /* Separa el botón del resto */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-family: 'fira sans';
+}
+
+.boton-compra:hover {
+    background-color: #a00c0c;
+}
+
+.volver-tienda {
+    display: inline-block;
+    margin-top: 25px;
+    color: #000;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.volver-tienda:hover {
+    color: #d10f0f;
+}
+
+
+#logo a {
+    text-decoration: none;
+    color: white;
+}
+
+#logo a:hover {
+    color: #fdfdfd; /* Cambia de color al pasar el cursor */
+}
+
+
+.cantidad-container {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Aumenta la separación entre los botones */
+    font-size: 1.2em;
+    margin-top: 15px; /* Separa la cantidad de la talla */
+}
+
+
+.cantidad-container button {
+    background-color: transparent;
+    border: 2px solid #d10f0f;
+    color: #d10f0f;
+    font-size: 1.5em;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 5px;
+}
+
+.cantidad-container button:hover {
+    background-color: #d10f0f;
+    color: white;
+}
+
+#cantidad {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 1.3em;
+    font-weight: bold;
+    width: 50px;
+    text-align: center;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    max-height: 400px;
+    overflow: hidden;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    filter: brightness(0.8); /* Oscurece un poco la imagen para mejorar el contraste */
+}
+
+.banner-texto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.banner-texto h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.banner-texto p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.boton-banner {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #d10f0f;
+    color: white;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.boton-banner:hover {
+    background-color: #a00c0c;
+}

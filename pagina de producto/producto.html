@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camiseta FashionCo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@600&family=Bebas+Neue&family=Merriweather&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Encabezado fijo con el nombre de la tienda y menú -->
+    <header>
+        <h1 id="logo"><a href="/inicio de pagina/index.html">FashionCo</a></h1>
+        <nav>
+            <ul>
+                <li><a href="/inicio de pagina/index.html">Inicio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido del producto -->
+    <div class="producto-container">
+        <div class="imagen-producto">
+            <img src="imagenes/ropaimagen1.png" alt="Camiseta Negra De Botones">
+        </div>
+        <div class="info-producto">
+            <h1>Camiseta Negra De Botones</h1>
+            <p class="precio">$80,000</p>
+
+            <label for="talla">Elige tu talla:</label>
+            <select id="talla">
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+                <option>XL</option>
+            </select>
+            
+            <div class="cantidad-container">
+                <button id="decrementar">-</button>
+                <span id="cantidad">1</span>
+                <button id="incrementar">+</button>
+            </div>
+            
+            <button class="boton-compra">Agregar al Carrito</button>
+            
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
